@@ -115,10 +115,10 @@ def main():
 	print(f'20 most frequently used words trimmed: {get_20_most_frequent_words_filtered(tokens)}')
 	print(f'20 least frequently used words: {get_20_least_frequent_words(tokens)}')
 	print(f'Frequency by chapter: {get_freq_by_chapter("love", tokens)}')
-	# print(f'Chapter of quote: {get_chapter_of_quote("The highest as the lowest form of criticism is a mode of autobiography", tokens)}')
-	# print(f'All sentences from the: {generate_sentence(tokens_with_ends)}')
-	# print(f'Sentence completion: {sentence_completion("The", tokens_with_ends)}')
-	# print(f'Closest match: {closest_matching_quote("The two men sauntered", _token_to_line(tokens_with_ends))}')
+	print(f'Chapter of quote: {get_chapter_of_quote("The highest as the lowest form of criticism is a mode of autobiography", tokens)}')
+	print(f'All sentences from the: {generate_sentence(tokens_with_ends)}')
+	print(f'Sentence completion: {sentence_completion("The", tokens_with_ends)}')
+	print(f'Closest match: {closest_matching_quote("The two men sauntered", _token_to_line(tokens_with_ends))}')
 
 def _token_to_line(tokens):
 	lines = []
